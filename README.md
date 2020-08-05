@@ -57,7 +57,27 @@ Dockerfiles and Docker-Compose is use to build our images. However it is not use
 ### Infrasturcture Diagram 
 ![Infra-Diagram](https://imagizer.imageshack.com/img923/5626/piEWWK.png)
 
+### terraform 
+```console
+user@server:~$ cd terraform 
+user@server:~$ terraform init 
+user@server:~$ terraform plan 
+user@server:~$ terraform apply
+``` 
 ### kubernetes 
+backend:
+```console 
+user@server:~$ kubectl apply -f backend.yaml
+```
+front-end:
+```console
+user@server:~$ kubectl apply -f frontend.yaml
+```
+nginx:
+```console
+user@server:~$ kubectl apply -f nginx.yaml
+```
+
 
 ### Pricing 
 
